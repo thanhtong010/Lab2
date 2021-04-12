@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Thanh's Journal Entries for CSE 110 Lab 2</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Thanh Tong">
+        <meta name="description" content="Journal Entries for CSE 110">
+        <link rel="like" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <details>
+                <summary>About Me</summary>
+                Hi and welcome to my journal entries! I'm Thanh and currently, I'm a 2nd year studying computer
+                science at UCSD.
+            </details>
+            <br>
+            <div><b>Directory for Journal Entries</b></div>
+            <nav>
+                <ul>
+                    <li><a href="#april9">04/09</a></li>
+                    <li><a href="#april10">04/10</a></li>
+                    <li><a href="#april11">04/11</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Thanh's Journal Entries</h1>
+            </section>
+            <hr>
+            <div>
+                <h2 id="april9">Thankful it's Friday!</h2>
+                <h3>April 9th, 2021</h3>
+                <p>
+                    Today, I didn't have <em>too much</em> to do today besides going to a meeting for the CSE 3 tutor staff. We talked about
+                    how our labs went for the week and ways to improve interactability with the students. We decided that one way to 
+                    interact more with the students and have them work better together was to have students share their screen while
+                    they are in breakout rooms.
+                    <br>
+                    <br>
+                    After the tutor meeting, I just relaxed for the rest of the day (so thankful that it was Friday!) and watched TV
+                    shows. I was rewatching an anime called <i>Fruits Basket</i> because the third season of this show just came out
+                    and I needed a refresher of who the characters all were. Overall, a very fun and relaxing day!
+                    <img src="fruits_basket.jpg" width="600" height="400">
+                </p>
+            </div>
+            <hr>
+            <div>
+                <h2 id="april10">Family Time and Travel</h2>
+                <h3>April 10th, 2021</h3>
+                <p>
+                    Today was a more <strong>important</strong> day because I had a family obligation to attend. The event was from 9am - 1pm.
+                    Afterwards, I spent time with family and we watched old home videos that we had from the 2000s which was really
+                    fun. One video that we watched was of my 4th birthday party! It was fun watching me and my cousins as little kids
+                    (especially because we all had the same haircut when we were younger: thick bangs and shoulder-length hair).
+                    <br>
+                    <video width="320" height="240" controls>
+                        <source src="family.mp4" type="video/mp4">
+                        Cute video about Family :)
+                    </video>
+                    <br>
+                    <br>
+                    After this event, my cousins and I drove back down to San Diego since I am currently living on-campus. The drive
+                    was 2 hours, which was much longer than the usual 1-hour trip because of traffic along the 5. I got back to UCSD
+                    campus around 6 pm, and then I 'made' myself dinner (more so just boxed mac n' cheese lol). Afterwards, I studied
+                    and took a CSE 101 quiz and relaxed for the rest of the night.
+                </p>
+            </div>
+            <hr>
+            <div>
+                <h2 id="april11">Catching up on Schoolwork</h2>
+                <h3>April 11th, 2021</h3>
+                <p>
+                    Unfortunately, today I had to catch up on all the schoolwork that I put off during the weekend. :( 
+                    <br>
+                    My TODO list was (ordered by priority):
+                    <ol>
+                        <li>Watch CSE 110 Project Team meeting (I missed it because of my family obligation yesterday)</li>
+                        <li>Finish CSE 110 Lab</li>
+                        <li>Go to IEEE Quarterly Projects Kickoff</li>
+                    </ol>
+                    How I was feeling today:
+                    <br>
+                    <audio controls src="oh_no.mp3"></audio>
+                </p>
+                <p>
+                    Another thing that I did today was get the first dose of the COVID vaccine! I was eligible to get it since I'm 
+                    a UCSD CSE tutor, so I waited in line at RIMAC for about half an hour. Their process was very efficient, which
+                    was nice especially because there was a lot of people there. My symptoms haven't been too bad so far, the only thing
+                    is that throughout the day, my arm got more sore.
+                    <br>
+                    <br>
+                    Overall, a pretty boring day but excited to start week 3!
+                </p>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <h2>Create a Journal Entry</h2>
+            <form>
+                <label>
+                    Name of Journal Entry:
+                    <input type="text" id="entry-name" name="submitted-name">
+                </label> 
+                <br>
+                <label>
+                    Choose the date:
+                    <input type="date" id="start" name="entry-start" value="2021-01-01" min="2021-01-01" max="2021-4-12">
+                </label>
+                <fieldset>
+                    <legend>Categorize the journal entry:</legend>
+                    <input type="radio" id="fun" name="topic">
+                    <label for="april9">For Fun</label><br/>
+                
+                    <input type="radio" id="school" name="topic">
+                    <label for="april10">School</label><br/>
+                
+                    <input type="radio" id="serious" name="topic">
+                    <label for="april11">Serious</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What kind of media do you want to include?</legend>
+                    <input type="checkbox" id="audio" name="media" unchecked>
+                    <label for="scales">Audio</label>
+
+                    <input type="checkbox" id="video" name="media" unchecked>
+                    <label for="scales">Video</label>
+
+                    <input type="checkbox" id="Photos" name="media" unchecked>
+                    <label for="scales">Photos</label>
+                </fieldset>
+                <label for="about-entry">What is the entry going to be about?</label>
+                <input list="about-entry" id="entry" name="entry" />
+                <datalist id="about-entry">
+                    <option value="Family">
+                    <option value="Friends">
+                    <option value="Clothes/Shopping">
+                    <option value="Food">
+                </datalist>
+                <br>
+                <label for="school">Choose the university you attend:</label>
+                <select name="school" id="school">
+                    <option value="">--Please choose an option--</option>
+                    <option value="ucsd">UCSD</option>
+                    <option value="ucla">UCLA</option>
+                    <option value="berkeley">UC Berkeley</option>
+                </select>
+                <button>Save</button>
+            </form>
+        </footer>
+    </body>
+</html>
