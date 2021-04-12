@@ -50,10 +50,12 @@
                 <h2 id="april10">Family Time and Travel</h2>
                 <h3>April 10th, 2021</h3>
                 <p>
+                    <span id="family">
                     Today was a more <strong>important</strong> day because I had a family obligation to attend. The event was from 9am - 1pm.
                     Afterwards, I spent time with family and we watched old home videos that we had from the 2000s which was really
                     fun. One video that we watched was of my 4th birthday party! It was fun watching me and my cousins as little kids
                     (especially because we all had the same haircut when we were younger: thick bangs and shoulder-length hair).
+                    </span>
                     <br>
                     <video width="320" height="240" controls>
                         <source src="family.mp4" type="video/mp4">
@@ -102,7 +104,7 @@
                 <br>
                 <label>
                     Choose the date:
-                    <input type="date" id="start" name="entry-start" value="2021-01-01" min="2021-01-01" max="2021-4-30">
+                    <input type="date" id="start" name="entry-start" value="2021-01-01" min="2021-01-01" max="2021-04-30">
                 </label>
                 <fieldset>
                     <legend>Categorize the journal entry:</legend>
@@ -127,8 +129,8 @@
                     <label for="video">Photos</label>
                 </fieldset>
                 <label for="about-entry">What is the entry going to be about?</label>
-                <input list="about-entry" id="about-entry" name="entry" />
-                <datalist id="about-entry">
+                <input list="category" id="about-entry" name="entry" />
+                <datalist id="category">
                     <option value="Family">
                     <option value="Friends">
                     <option value="Clothes/Shopping">
